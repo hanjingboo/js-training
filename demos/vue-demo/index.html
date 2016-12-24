@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue demo</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<input type="text" v-model="msg" placeholder="请输入">
+		<p>msg:{{msg}}</p>
+		<ul>
+			<li v-for="val of filterResult">{{val.name}}</li>
+		</ul>
+		<div>{{counter}}</div>
+		<button @click="counter++">click</button>
+		<button @click="msgChange">msg change</button>
+	</div>
+
+	<script>
+		var vm=new Vue({
+			el:"#app",
+			data:{
+				msg:"b",
+				result:[{
+					name:"cc"
+				},
+				{
+					name:"aa"
+				},
+				{
+					name:"bb"
+				}],
+				counter:0
+			},
+			methods:{
+				msgChange() {
+					this.msg+=this.counter;
+				}
+			},
+			computed:{
+				filterResult:function () {
+					var that=this;
+					return this.result.filter(function (val) {
+						return val.name.indexOf(that.msg)!=-1;
+					});
+				}
+			}
+		});
+	</script>
+</body>
+</html>
