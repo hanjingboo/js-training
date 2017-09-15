@@ -1,0 +1,14 @@
+{
+  "name": "babel-plugin-import",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node test.js"
+  },
+  "author": "hjb",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0"
+  }
+}
