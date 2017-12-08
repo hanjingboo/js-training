@@ -1,0 +1,30 @@
+{
+  "name": "js-training",
+  "version": "1.0.0",
+  "description": "js训练、学习和笔记",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanjingboo/js-training.git"
+  },
+  "keywords": [
+    "js",
+    "training"
+  ],
+  "author": "hjb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hanjingboo/js-training/issues"
+  },
+  "homepage": "https://github.com/hanjingboo/js-training#readme",
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}
